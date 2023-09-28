@@ -1,1 +1,32 @@
-/* место для вашего кода */
+.header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 1340px;
+  height: 109px;
+  justify-items: center;
+  align-items: center;
+  margin: 51px 92px 49px 92px;
+}
+
+.navigation-menu-list {
+  grid-column: 1/2;
+  justify-self: stretch;
+}
+
+.menu-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: circle;
+}
+
+.link-header-logo {
+  grid-column: 2/3;
+  display: block;
+  width: 148px;
+  height: 105px;
+}
+
+.address {
+  grid-column: 3/4;
+}
