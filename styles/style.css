@@ -2,21 +2,22 @@
     box-sizing: border-box;
     width: 100%;
     max-width: 1440px;;
-    min-height: 109px;
     margin: auto;
 }
 
 .header {
-  display: flex;
+  display: grid;
+  grid-template-columns: 388px 209px 148px 355px 240px;
   justify-content: space-between;
   align-items: center;
   padding: 92px 49px 96px 51px;
   background-color: white;
+  min-height: 109px;
 }
 
 .header-menu-list {
+  grid-column: 1/2;
   display: flex;
-  width: 388px;
   justify-content: space-between;
   align-items: center;
   list-style: circle;
@@ -36,15 +37,16 @@
 }
 
 .header-logo-image {
-    width: 100%;
+  width: 100%;
 }
 
 .header-logo {
-    display: block;
-    width: 148px;
+  grid-column: 3/4;
+  display: block;
 }
 
 .address {
+  grid-column: 5/6;
   color: #000;
   font-family: Raleway;
   font-size: 18px;
@@ -53,11 +55,22 @@
 }
 
 .cover {
-  display: block;
-  background-image: url(../images/cover.jpg);
-  background-repeat: no-repeat;
-  background-position: cover;
-  background-size: 100%;
+    position: relative;
+    display: block;
+    background-image: url(../images/cover.jpg);
+    background-repeat: no-repeat;
+    background-position: cover;
+    background-size: 100% auto;
+    z-index: 0;
+}
+
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0.6;
+  background: black;
+  z-index: -1;
 }
 
 .cover-title {
@@ -66,22 +79,70 @@
     font-size: 100px;
     font-style: normal;
     font-weight: 700;
-    line-height: 115%; /* 115px */
+    line-height: 115%; 
     letter-spacing: 30px;
     text-transform: uppercase;
-    padding: 165px 50px 237px 50px;
-}
+    padding: 165px 50px 135px 50px;
+} 
 
 .accept-span {
     display: block;
 }
 
-.text-center {
+.cover-title .text-center {
     text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .text-right {
     text-align: right;
+}
+
+.letter-spacing-extended {
+  letter-spacing: 30px;
+}
+
+.no-letter-spacing {
+  margin-right: -30px;
+}
+
+.cover-description {
+  display: grid;
+  grid-template-columns: 633px 257px;
+  justify-content: end;
+  align-content: center;
+  justify-items: end;
+  align-items: center;
+  gap: 78px;
+  padding-bottom: 50px;
+  padding-right: 50px;
+}
+
+.cover-description-text {
+  word-spacing: 15px; 
+  color: #FFF;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 28px; /* 127.273% */
+  text-transform: uppercase;
+}
+
+.bet-button {
+  border: 1px solid #FFF;;
+  color: white;
+  background-color: transparent ;
+  color: #FFF;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  width: 257px;
+  height: 52px;
 }
 
 
