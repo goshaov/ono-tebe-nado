@@ -10,7 +10,7 @@
   grid-template-columns: 388px 209px 148px 355px 240px;
   justify-content: space-between;
   align-items: center;
-  padding: 92px 49px 96px 51px;
+  padding: 92px 50px 96px 50px;
   background-color: white;
   min-height: 109px;
 }
@@ -144,5 +144,104 @@
   width: 257px;
   height: 52px;
 }
+
+.lots {
+  display: block;
+  padding: 180px 50px;
+  background-color: #FFFFFF;
+}
+
+.lots-heading {
+  display: block;
+  color: #000;
+  font-family: Raleway;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  padding-bottom: 27px;
+  padding-left: 40px;
+}
+
+.lots-card-list {
+  display: grid;
+  list-style: none;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 25px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 430px;
+  height: 450px;
+}
+
+.card-type-film {
+  position: relative;
+  background-image: url(../images/card-lot-01.jpg);
+  background-repeat: no-repeat;
+  background-position: cover;
+  background-size: 100% auto;
+  z-index: 0;
+}
+
+.card-type-book{
+  position: relative;
+  background-image: url(../images/card-lot-02.jpg);
+  background-repeat: no-repeat;
+  background-position: cover;
+  background-size: 100% auto;
+  z-index: 0;
+}
+
+.card-type-picture{
+  position: relative;
+  background-image: url(../images/card-lot-03.jpg);
+  background-repeat: no-repeat;
+  background-position: cover;
+  background-size: 100% auto;
+  z-index: 0;
+}
+
+.card-title {
+  display: block;
+  color: #FFF;
+  font-family: Raleway;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 120%;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  padding-top: 50px;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+.card-text {
+  display: block;
+  color: #FFF;
+  font-family: Raleway;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 120%; 
+  padding-bottom: 50px;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+.lots-look-more-link {
+  display: block;
+  color: #000;
+  font-family: Raleway;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-left: 40px;
+  padding-top: 30px;
+}
+
 
 
