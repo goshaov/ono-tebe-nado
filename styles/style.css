@@ -80,7 +80,6 @@
   color: #FFF;
   font-family: Raleway;
   font-size: 100px;
-  font-style: normal;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 30px;
@@ -92,18 +91,20 @@
 
 .text-left {
   text-align: left;
-  padding: 165px 50px 0px;
-  line-height: 15px;
+  padding: 165px 50px 0px 50px;
+  line-height: 1.15;
 }
 
 .text-center {
   text-align: center;
-  padding: 20px 110px 20px 50px;
+  padding: 20px 110px 0px 50px;
+  line-height: 1;
 }
 
 .text-right {
   text-align: right;
-  padding: 0px 50px 135px;
+  padding: 20px 50px 0px 50px;
+  line-height: 1;
 }
 
 .letter-spacing-extended {
@@ -125,10 +126,11 @@
   grid-template-columns: 633px 257px;
   justify-content: end;
   align-content: center;
-  justify-items: end;
+  justify-items: stretch;
   align-items: center;
   column-gap: 78px;
   padding-right: 50px;
+  padding-top: 135px;
 }
 
 .cover-description-text {
@@ -138,7 +140,6 @@
   font-family: Raleway;
   font-size: 22px;
   font-weight: 400;
-  line-height: 28px;
   text-transform: uppercase;
 }
 
