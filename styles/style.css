@@ -264,9 +264,6 @@
   display: block;
   padding: 0px 50px 180px;
   background-color: #FFFFFF;
-}
-
-.about-column {
   display: grid;
   grid-template-columns: 430px auto;
   column-gap: 25px;
@@ -314,11 +311,11 @@
   line-height: normal;
 }
 
-.first-paragraph {
+.about-text:nth-child(2) {
   grid-row: 4/5;
 }
 
-.second-paragraph {
+.about-text:last-child {
   grid-row: 6/7;
 }
 
