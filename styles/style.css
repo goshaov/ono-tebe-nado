@@ -291,7 +291,7 @@
   grid-template-rows: 100px auto 100px auto 25px auto;
 }
 
-.about__title {
+.about-title {
   grid-row: 2/3;
   color: #000;
   font-family: Raleway, sans-serif;
