@@ -107,7 +107,7 @@
 }
 
 .no-letter-spacing {
- margin-right: -30px;
+ letter-spacing: initial;
 }
 
 .cover-description {
@@ -242,11 +242,9 @@
 
 .about {
  display: grid;
- padding: 0px 50px 180px;
- background-color: #ffffff;
- display: grid;
  grid-template-columns: 430px 1fr;
  column-gap: 25px;
+ padding: 0px 50px 180px;
 }
 
 .about-logo-column {
@@ -297,8 +295,7 @@
 .footer {
  display: flex;
  justify-content: space-between;
- padding: 5px 50px 90px;
- background-color: #ffffff;
+ padding: 0px 50px 90px;
 }
 
 .footer-menu-list {
